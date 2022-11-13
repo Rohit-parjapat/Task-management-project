@@ -40,9 +40,11 @@
       aria-hidden="true"
     >
       <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="addNewModalLabel">Add New Task</h5>
+        <div class="modal-content bg-dark">
+          <div class="modal-header bg-black">
+            <h5 class="modal-title text-white" id="addNewModalLabel">
+              Add New Task
+            </h5>
             <button
               type="button"
               class="btn-close"
@@ -53,7 +55,9 @@
           <div class="modal-body">
             <form onsubmit="return false">
               <div class="mb-3">
-                <label for="imageUrl" class="form-label">Image URL</label>
+                <label for="imageUrl" class="form-label text-white"
+                  >Image URL</label
+                >
                 <input
                   type="url"
                   class="form-control"
@@ -62,7 +66,9 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="taskTitle" class="form-label">Task Title</label>
+                <label for="taskTitle" class="form-label text-white"
+                  >Task Title</label
+                >
                 <input
                   type="text"
                   class="form-control"
@@ -72,7 +78,9 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="tags" class="form-label">Task Type</label>
+                <label for="tags" class="form-label text-white"
+                  >Task Type</label
+                >
                 <input
                   type="text"
                   class="form-control"
@@ -82,7 +90,7 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="taskDescription" class="form-label"
+                <label for="taskDescription" class="form-label text-white"
                   >Task Description</label
                 >
                 <textarea
@@ -95,7 +103,7 @@
               </div>
               <button
                 type="button"
-                class="btn btn-secondary"
+                class="btn btn-danger"
                 data-bs-dismiss="modal"
               >
                 Close
@@ -106,7 +114,7 @@
                 class="btn btn-primary"
                 onclick="handleSubmit()"
               >
-                Save changes
+                Submit
               </button>
             </form>
           </div>
@@ -122,9 +130,11 @@
       aria-hidden="true"
     >
       <div class="modal-dialog modal-lg">
-        <div class="modal-content">
+        <div class="modal-content bg-dark">
           <div class="modal-header">
-            <h5 class="modal-title" id="showTaskLabel">Task Details</h5>
+            <h5 class="modal-title text-white" id="showTaskLabel">
+              Task Details
+            </h5>
             <button
               type="button"
               class="btn-close"
@@ -146,9 +156,9 @@
       </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-dark bg-lighten-xl">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Tasky</a>
+        <a class="navbar-brand text-white" href="#">Tasky</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -163,7 +173,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link text-white active" aria-current="page" href="#"
+                >Home</a
+              >
             </li>
           </ul>
           <button

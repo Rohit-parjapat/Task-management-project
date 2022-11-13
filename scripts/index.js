@@ -8,9 +8,9 @@ const taskModal = document.querySelector(".task__modal__body");
 
 const htmlTaskContent = ({ id, title, description, type, url }) => `
   <div class='col-md-6 col-lg-4 mt-3' id=${id} key=${id}>
-    <div class='card shadow-sm task__card'>
+    <div class='card shadow-sm task__card bg-dark'>
       <div class='card-header d-flex gap-2 justify-content-end task__card__header'>
-        <button type='button' class='btn btn-outline-info mr-2' name=${id} onclick="editTask.apply(this, arguments)">
+        <button type='button' class='btn btn-outline-primary mr-2' name=${id} onclick="editTask.apply(this, arguments)">
           <i class='fas fa-pencil-alt' name=${id}></i>
         </button>
         <button type='button' class='btn btn-outline-danger mr-2' name=${id} onclick="deleteTask.apply(this, arguments)">
@@ -25,18 +25,18 @@ const htmlTaskContent = ({ id, title, description, type, url }) => `
       <img width='100%' height='150px' style="object-fit: cover; object-position: center" src="https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png" alt='card image cap' class='img-fluid place__holder__image mb-3' />
       `
         }
-        <h4 class='task__card__title'>${title}</h4>
-        <p class='description trim-3-lines text-muted' data-gram_editor='false'>
+        <h4 class='task__card__title text-white'>${title}</h4>
+        <p class='description trim-3-lines text-white' data-gram_editor='false'>
           ${description}
         </p>
-        <div class='tags text-white d-flex flex-wrap'>
-          <span class='badge bg-primary m-1'>${type}</span>
+        <div class='tags d-flex flex-wrap'>
+          <p class='text-capitalize text-white'>${type}</p>
         </div>
       </div>
       <div class='card-footer'>
         <button 
         type='button' 
-        class='btn btn-outline-primary float-right' 
+        class='btn btn-outline-primary float-right ' 
         data-bs-toggle='modal'
         data-bs-target='#showTask'
         id=${id}
@@ -63,8 +63,8 @@ const htmlModalContent = ({ id, title, description, url }) => {
       `
     }
     <strong class='text-sm text-muted'>Created on ${date.toDateString()}</strong>
-    <h2 class='my-3'>${title}</h2>
-    <p class='lead'>
+    <h2 class='my-3 text-white'>${title}</h2>
+    <p class='lead text-white'>
       ${description}
     </p>
     </div>

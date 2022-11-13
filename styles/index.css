@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #ebf2ff !important;
+  background-color: #0f1114 !important;
 }
 
 .add__new__btn__mobile__only {
@@ -12,13 +12,7 @@ body {
   bottom: 0;
   right: 0;
   padding: 15px 10px;
-  background: white;
+  background: rgb(75, 44, 249);
   z-index: 3;
-  width: 100%;
+  border-radius: 10px;
 }
-
-/* @media (min-width: 768px) {
-  .add__new__btn__mobile__only {
-    display: none;
-  }
-} */
